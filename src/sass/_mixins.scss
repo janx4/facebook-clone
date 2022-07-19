@@ -1,0 +1,30 @@
+@mixin flex($justify-content, $align-items) {
+    display: flex;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+@mixin borderOutline-none {
+    border: none;
+    outline: none;
+}
+
+@mixin icon-size($width, $height) {
+    background-size: auto;
+    width: $width;
+    height: $height;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
+@mixin mediaMinWidth($min-width) {
+    @media screen and (min-width: $min-width) {
+        @content;
+    }
+}
+
+@mixin mediaMaxWidth($max-width) {
+    @media screen and (max-width: $max-width) {
+        @content;
+    }
+}

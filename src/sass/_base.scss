@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+}
+html {
+    // overflow-y: scroll;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*----Buttons----*/
+.blue_btn {
+    @include borderOutline-none;
+    @include flex(center, center);
+    background: $blue-color;
+    padding: 8.5px 12px;
+    border-radius: 7px;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 14px;
+    color: #fff;
+    gap: 6px;
+    cursor: pointer;
+}
+.light_blue_btn {
+    @include borderOutline-none;
+    @include flex(center, center);
+    background: $light-blue-color;
+    padding: 8.5px 12px;
+    border-radius: 7px;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 14px;
+    color: #fff;
+    gap: 6px;
+    cursor: pointer;
+}
+.gray_btn {
+    @include borderOutline-none;
+    @include flex(center, center);
+    background: $bg-secondary;
+    padding: 8.5px 12px;
+    border-radius: 7px;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 14px;
+    color: $color-primary;
+    gap: 6px;
+    cursor: pointer;
+}
+.blue_btn,
+.gray_btn span {
+    transform: translateY(-1px);
+}
+
+/*----Buttons----*/
+.blur {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.768);
+    z-index: 9999999999;
+}
+/*----Buttons----*/
+
+/*-----Hovers-----*/
+.hover1:hover {
+    background: $bg-secondary;
+}
+.hover2:hover {
+    background: $bg-third;
+}
+.hover3:hover {
+    background: #d4d6da3a;
+}
+
+/*-----Hovers-----*/
+.card {
+    height: 500px;
+    width: 500px;
+    background: red;
+}
+
+/*----Scrollbar----*/
+
+.scrollbar::-webkit-scrollbar {
+    width: 8px;
+}
+.scrollbar::-webkit-scrollbar-thumb {
+    background: #aeaeafa1;
+    border-radius: 5px;
+}
+/*----Scrollbar----*/
+
+/*---Circles------*/
+.small_circle {
+    @include flex(center, center);
+    position: relative;
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    margin-right: 11px;
+    background: $bg-third;
+    cursor: pointer;
+}
+/*---Circles------*/
+
+/*----filters---*/
+.filter_blue {
+    filter: invert(39%) sepia(57%) saturate(200%) saturate(200%) saturate(200%)
+        saturate(200%) saturate(200%) saturate(147.75%) hue-rotate(202deg)
+        brightness(97%) contrast(96%);
+}
+/*----filters---*/

@@ -1,0 +1,443 @@
+.friends_requests_icon {
+    background-image: url("../../public/static/icons/icons11.png");
+    background-position: 0px -117px;
+    @include icon-size(20px, 20px);
+    -webkit-filter: invert(10%);
+}
+.friends_suggestions_icon {
+    background-image: url("../../public/static/icons/icons11.png");
+    background-position: 0px -75px;
+    @include icon-size(20px, 20px);
+    -webkit-filter: invert(10%);
+}
+.all_friends_icon {
+    background-image: url("../../public/static/icons/icons11.png");
+    background-position: 0px -96px;
+    @include icon-size(20px, 20px);
+    -webkit-filter: invert(10%);
+}
+.birthdays_icon {
+    background-image: url("../../public/static/icons/icons11.png");
+    background-position: 0px -138px;
+    @include icon-size(20px, 20px);
+    -webkit-filter: invert(10%);
+}
+.m_post_icon {
+    background-image: url("../../public/static/icons/icons12.png");
+    background-position: 0px -132px;
+    @include icon-size(20px, 20px);
+}
+.m_story_icon {
+    background-image: url("../../public/static/icons/icons13.png");
+    background-position: 0px -387px;
+    @include icon-size(20px, 20px);
+}
+.m_room_icon {
+    background-image: url("../../public/static/icons/icons14.png");
+    background-position: 0px -542px;
+    @include icon-size(20px, 20px);
+}
+.m_page_icon {
+    background-image: url("../../public/static/icons/icons14.png");
+    background-position: 0px -521px;
+    @include icon-size(20px, 20px);
+}
+.m_ad_icon {
+    background-image: url(../../public/static/icons/icons14.png);
+    background-position: 0px -1004px;
+    @include icon-size(20px, 20px);
+}
+.m_group_icon {
+    background-image: url(../../public/static/icons/icons14.png);
+    background-position: 0px -479px;
+    @include icon-size(20px, 20px);
+}
+.m_event_icon {
+    background-image: url(../../public/static/icons/icons14.png);
+    background-position: 0px -647px;
+    @include icon-size(20px, 20px);
+}
+.m_post_mar {
+    background-image: url(../../public/static/icons/icons13.png);
+    background-position: 0px -366px;
+    @include icon-size(20px, 20px);
+}
+.m_post_job {
+    background-image: url(../../public/static/icons/icons14.png);
+    background-position: 0px -626px;
+    @include icon-size(20px, 20px);
+}
+.report_filled_icon {
+    background-image: url(../../public/static/icons/icons15.png);
+    background-position: 0px -25px;
+    @include icon-size(20px, 20px);
+}
+.settings_filled_icon {
+    background-image: url(../../public/static/icons/icons16.png);
+    background-position: -21px -228px;
+    @include icon-size(20px, 20px);
+}
+.help_filled_icon {
+    background-image: url(../../public/static/icons/icons17.png);
+    background-position: 0px -487px;
+    @include icon-size(20px, 20px);
+}
+.dark_filled_icon {
+    background-image: url(../../public/static/icons/icons17.png);
+    background-position: 0px -340px;
+    @include icon-size(20px, 20px);
+}
+.logout_filled_icon {
+    background-image: url(../../public/static/icons/icons15.png);
+    background-position: 0px -46px;
+    @include icon-size(20px, 20px);
+}
+.right_icon {
+    background-image: url(../../public/static/icons/icons18.png);
+    background-position: -83px -13px;
+    @include icon-size(24px, 24px);
+    filter: invert(50%);
+}
+.privacy_checkup_icon {
+    background-image: url(../../public/static/icons/icons15.png);
+    background-position: 0px -67px;
+    @include icon-size(20px, 20px);
+}
+.privacy_shortcuts_icon {
+    background-image: url(../../public/static/icons/icons19.png);
+    background-position: 0px -495px;
+    @include icon-size(20px, 20px);
+}
+.activity_log_icon {
+    background-image: url(../../public/static/icons/icons20.png);
+    background-position: -25px -250px;
+    @include icon-size(20px, 20px);
+}
+.news_icon {
+    background-image: url(../../public/static/icons/icons21.png);
+    background-position: 0px -239px;
+    @include icon-size(20px, 20px);
+}
+.language_icon {
+    background-image: url(../../public/static/icons/icons22.png);
+    background-position: 0px -658px;
+    @include icon-size(20px, 20px);
+}
+.arrow_back_icon {
+    background-image: url(../../public/static/icons/icons18.png);
+    background-position: 0px -46px;
+    @include icon-size(20px, 20px);
+}
+.help_center_icon {
+    background-image: url(../../public/static/icons/icons17.png);
+    background-position: 0px -487px;
+    @include icon-size(20px, 20px);
+}
+.email_icon {
+    background-image: url(../../public/static/icons/icons22.png);
+    background-position: 0px -532px;
+    @include icon-size(20px, 20px);
+}
+.info_filled_icon {
+    background-image: url(../../public/static/icons/icons23.png);
+    background-position: 0px -355px;
+    @include icon-size(20px, 20px);
+}
+.keyboard_icon {
+    background-image: url(../../public/static/icons/icons24.png);
+    background-position: 0px -242px;
+    @include icon-size(20px, 20px);
+}
+.amm_s_ic {
+    background-image: url(../../public/static/icons/icons12.png);
+    background-position: -34px -174px;
+    @include icon-size(16px, 16px);
+    -webkit-filter: invert(40%);
+}
+.ad_choices_icon {
+    background-image: url(../../public/static/icons/icons6.png);
+    background-position: 0 -126px;
+    @include icon-size(12px, 12px);
+    transform: translateY(1px);
+    -webkit-filter: invert(40%);
+}
+
+.pin_icon {
+    background-image: url("../../public/static/icons/icons1.png");
+    background-position: 0px -378px;
+    @include icon-size(20px, 20px);
+}
+.save_icon {
+    background-image: url("../../public/static/icons/icons1.png");
+    background-position: 0px -63px;
+    @include icon-size(20px, 20px);
+}
+.embed_icon {
+    background-image: url("../../public/static/icons/icons1.png");
+    background-position: 0px -126px;
+    @include icon-size(20px, 20px);
+}
+.copy_icon {
+    background-image: url("../../public/static/icons/icons2.png");
+    background-position: 0px -568px;
+    @include icon-size(20px, 20px);
+}
+.edit_icon {
+    background-image: url("../../public/static/icons/icons2.png");
+    background-position: 0px -610px;
+    @include icon-size(20px, 20px);
+    -webkit-filter: invert(40%);
+}
+.turnOffNotifications_icon {
+    background-image: url("../../public/static/icons/icons3.png");
+    background-position: 0px -138px;
+    @include icon-size(20px, 20px);
+}
+.delete_icon {
+    background-image: url("../../public/static/icons/icons1.png");
+    background-position: 0px -399px;
+    @include icon-size(20px, 20px);
+}
+
+.date_icon {
+    background-image: url("../../public/static/icons/icons4.png");
+    background-position: 0px -67px;
+    @include icon-size(20px, 20px);
+}
+.refresh_icon {
+    background-image: url("../../public/static/icons/refresh.png");
+    background-position: 0px 0px;
+    @include icon-size(20px, 20px);
+}
+.archive_icon {
+    background-image: url("../../public/static/icons/icons1.png");
+    background-position: 0px -84px;
+    @include icon-size(20px, 20px);
+}
+.trash_icon {
+    background-image: url("../../public/static/icons/icons2.png");
+    background-position: 0px -799px;
+    @include icon-size(20px, 20px);
+}
+.like_icon {
+    background-image: url("../../public/static/icons/icons5.png");
+    background-position: 0 -243px;
+    @include icon-size(18px, 18px);
+    filter: invert(40%);
+}
+.comment_icon {
+    background-image: url("../../public/static/icons/icons5.png");
+    background-position: 0 -205px;
+    @include icon-size(18px, 18px);
+    filter: invert(40%);
+}
+.share_icon {
+    background-image: url("../../public/static/icons/icons5.png");
+    background-position: 0 -262px;
+    @include icon-size(18px, 18px);
+    filter: invert(40%);
+}
+.emoji_icon {
+    background-image: url("../../public/static/icons/icons5.png");
+    background-position: 0px -434px;
+    @include icon-size(16px, 16px);
+    filter: invert(40%);
+}
+.camera_icon {
+    background-image: url("../../public/static/icons/icons5.png");
+    background-position: 0px -366px;
+    @include icon-size(16px, 16px);
+    filter: invert(40%);
+}
+.gif_icon {
+    background-image: url("../../public/static/icons/icons5.png");
+    background-position: 0px -451px;
+    @include icon-size(16px, 16px);
+    filter: invert(40%);
+}
+.sticker_icon {
+    background-image: url("../../public/static/icons/icons5.png");
+    background-position: 0px -468px;
+    @include icon-size(16px, 16px);
+    filter: invert(40%);
+}
+.exit_icon {
+    background-image: url("../../public/static/icons/icons6.png");
+    background-position: -126px -71px;
+    @include icon-size(20px, 20px);
+    filter: invert(40%);
+}
+.edit_icon {
+    background-image: url("../../public/static/icons/icons18.png");
+    background-position: -34px -109px;
+    @include icon-size(16px, 16px);
+}
+.arrowDown_icon {
+    background-image: url("../../public/static/icons/icons6.png");
+    background-position: -117px -130px;
+    @include icon-size(12px, 12px);
+}
+.emoji_icon_large {
+    background-image: url("../../public/static/icons/icons7.png");
+    background-position: 0px -207px;
+    @include icon-size(24px, 24px);
+    filter: invert(40%);
+    cursor: pointer;
+}
+.tag_icon {
+    background-image: url("../../public/static/icons/icons7.png");
+    background-position: 0px -257px;
+    @include icon-size(24px, 24px);
+}
+.maps_icon {
+    background-image: url("../../public/static/icons/icons8.png");
+    background-position: 0px -225px;
+    @include icon-size(24px, 24px);
+}
+.microphone_icon {
+    background-image: url("../../public/static/icons/icons9.png");
+    background-position: 0px -100px;
+    @include icon-size(24px, 24px);
+}
+.addPhoto_icon {
+    background-image: url("../../public/static/icons/icons7.png");
+    background-position: -25px -292px;
+    @include icon-size(20px, 20px);
+}
+.phone_icon {
+    background-image: url("../../public/static/icons/icons7.png");
+    background-position: -25px -271px;
+    @include icon-size(20px, 20px);
+    filter: invert(20%);
+}
+.camera_filled_icon {
+    background-image: url("../../public/static/icons/icons25.png");
+    background-position: 0px -444px;
+    @include icon-size(20px, 20px);
+}
+.photo_icon {
+    background-image: url(../../public/static/icons/icons35.png);
+    background-position: 0px -63px;
+    @include icon-size(20px, 20px);
+    filter: invert(10%);
+}
+.upload_icon {
+    background-image: url(../../public/static/icons/icons35.png);
+    background-position: 0px -126px;
+    @include icon-size(20px, 20px);
+    filter: invert(10%);
+}
+.lifeEvent_icon {
+    background-image: url(../../public/static/icons/icons34.png);
+    background-position: -25px -250px;
+    @include icon-size(20px, 20px);
+}
+
+.plus_icon {
+    background-image: url(../../public/static/icons/icons22.png);
+    background-position: 0px -1341px;
+    @include icon-size(16px, 16px);
+}
+.frame_icon {
+    background-image: url(../../public/static/icons/icons31.png);
+    background-position: 0px -130px;
+    @include icon-size(16px, 16px);
+}
+.minus_icon {
+    background-image: url(../../public/static/icons/icons33.png);
+    background-position: 0px -50px;
+    @include icon-size(20px, 20px);
+}
+.plus_icon {
+    background-image: url(../../public/static/icons/icons32.png);
+    background-position: 0px -25px;
+    @include icon-size(20px, 20px);
+}
+.crop_icon {
+    background-image: url(../../public/static/icons/icons31.png);
+    background-position: 0px -113px;
+    @include icon-size(16px, 16px);
+}
+.temp_icon {
+    background-image: url(../../public/static/icons/icons31.png);
+    background-position: 0px -96px;
+    @include icon-size(16px, 16px);
+}
+.unfriend_outlined_icon {
+    background-image: url(../../public/static/icons/icons30.png);
+    background-position: 0px -105px;
+    @include icon-size(20px, 20px);
+}
+.turnOnNotification_icon {
+    background-image: url(../../public/static/icons/icons29.png);
+    background-position: 0px -324px;
+    @include icon-size(20px, 20px);
+}
+.download_icon {
+    background-image: url(../../public/static/icons/icons28.png);
+    background-position: 0px -42px;
+    @include icon-size(20px, 20px);
+}
+.fullscreen_icon {
+    background-image: url(../../public/static/icons/icons28.png);
+    background-position: 0px -210px;
+    @include icon-size(20px, 20px);
+}
+.rounded_plus_icon {
+    background-image: url(../../public/static/icons/icons27.png);
+    background-position: 0px 0px;
+    @include icon-size(32px, 32px);
+    -webkit-filter: invert(39%) sepia(57%) saturate(200%) saturate(200%)
+        saturate(200%) saturate(200%) saturate(200%) saturate(147.75%)
+        hue-rotate(202deg) brightness(97%) contrast(96%);
+}
+.equalize_icon {
+    background-image: url(../../public/static/icons/icons26.png);
+    background-position: 0px -63px;
+    @include icon-size(16px, 16px);
+}
+.manage_icon {
+    background-image: url(../../public/static/icons/icons26.png);
+    background-position: 0px -165px;
+    @include icon-size(16px, 16px);
+}
+.list_icon {
+    background-image: url(../../public/static/icons/icons26.png);
+    background-position: 0px -131px;
+    @include icon-size(16px, 16px);
+}
+.grid_icon {
+    background-image: url(../../public/static/icons/icons26.png);
+    background-position: 0px -80px;
+    @include icon-size(16px, 16px);
+    filter: invert(30%);
+}
+.info_icon {
+    background-image: url(../../public/static/icons/icons36.png);
+    @include icon-size(12px, 12px);
+    background-position: 0 -60px;
+}
+.adChoices_icon {
+    background-image: url(../../public/static/icons/icons37.png);
+    @include icon-size(16px, 16px);
+    background-position: 0 -60px;
+}
+.error_icon {
+    background-image: url(../../public/static/icons/icons10.png);
+    @include icon-size(21px, 21px);
+}
+.compact_icon {
+    background-image: url(../../public/static/icons/icons38.png);
+    background-position: 0px -130px;
+    @include icon-size(20px, 20px);
+}
+.public_icon {
+    background-image: url(../../public/static/icons/publicpack.png);
+    background-position: 0px -109px;
+    @include icon-size(20px, 20px);
+}
+.friends_home_icon {
+    background-image: url(../../public/static/icons/icons40.png);
+    background-position: 0px -423px;
+    @include icon-size(20px, 20px);
+}
