@@ -1,0 +1,118 @@
+.register {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: var(--bg-primary);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 8px;
+    width: 340px;
+    height: fit-content;
+    padding: 16px;
+    color: var(--color-primary);
+    @include mediaMinWidth(768px) {
+        width: 400px;
+    }
+
+    .register__header {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        border-bottom: 1px solid var(--bg-third);
+        padding-bottom: 16px;
+
+        span:first-of-type {
+            font-weight: 600;
+            color: #1c1e21;
+            font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif;
+            font-size: 32px;
+            line-height: 38px;
+            margin-bottom: 0;
+        }
+
+        span:last-of-type {
+            color: var(--color-secondary);
+            font-size: 15px;
+        }
+
+        i {
+            position: absolute;
+            right: 0;
+            cursor: pointer;
+        }
+    }
+
+    .register__form {
+        .row {
+            display: flex;
+            flex-direction: column;
+            padding: 4px 0;
+            gap: 8px;
+
+            .row__header {
+                font-size: 12px;
+            }
+
+            .row__cols {
+                margin-top: 6px;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 12px;
+                height: 36px;
+
+                select {
+                    background-color: var(--bg-primary);
+                    color: var(--color-primary);
+                    font-size: 16px;
+                    border-radius: 4px;
+                    line-height: 20px;
+                    cursor: pointer;
+                }
+            }
+
+            .row__cols_2 {
+                @extend .row__cols;
+                grid-template-columns: repeat(2, 1fr) !important;
+
+                .radio__wrapper {
+                    @include flex(space-between, center);
+                    border: 1px solid #ccd0d5;
+                    border-radius: 12px;
+                    padding: 8px;
+                    cursor: pointer;
+                    label {
+                        font-size: 16px;
+                        line-height: 36px;
+                    }
+                    input {
+                        font-size: 16px;
+                        align-self: center;
+                    }
+                }
+            }
+        }
+
+        .register__info {
+            color: #777;
+            font-size: 11px;
+            margin: 12px 0;
+        }
+
+        .register__btn-wrapper {
+            @include flex(center, center);
+            button {
+                width: 50%;
+                margin: 12px 0;
+                padding: 0 32px;
+                height: 36px;
+                border: none;
+                font-size: 18px;
+                background-color: #00a400;
+                border-radius: 6px;
+                color: white;
+                font-weight: 600;
+            }
+        }
+    }
+}

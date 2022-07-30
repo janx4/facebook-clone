@@ -1,5 +1,5 @@
 interface Props {
-    color: string;
+    color?: string;
 }
 function NewRoom({ color }: Props) {
     return (

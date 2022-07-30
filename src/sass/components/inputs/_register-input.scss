@@ -1,0 +1,84 @@
+.registerInput_wrapper {
+    position: relative;
+    min-width: 300px;
+    flex-direction: column;
+    @include flex(flex-start, center);
+    @include mediaMinWidth(768px) {
+        width: 100%;
+    }
+
+    .input_wrapper {
+        width: 100%;
+        height: 50px;
+        margin-bottom: 8px;
+        position: relative;
+
+        input {
+            outline: none;
+            border: 1px solid #ccd0d5;
+            background-color: var(--bg-primary);
+            width: 100%;
+            height: 100%;
+            font-size: 17px;
+            border-radius: 12px;
+            padding-left: 12px;
+
+            color: var(--color-primary);
+
+            &.error {
+                border-color: red;
+            }
+        }
+        & i {
+            position: absolute;
+            transform: scale(0.8);
+            top: 30%;
+            right: 8px;
+        }
+    }
+
+    & .error_bubble {
+        position: relative;
+        padding: 14px 8px;
+        background-color: var(--error-color);
+        width: 100%;
+        color: white;
+        font-size: 13px;
+        border-radius: 8px;
+        margin-bottom: 12px;
+
+        &.desktop {
+            position: absolute;
+            left: -23.5rem;
+        }
+
+        .error_arrow_left {
+            position: absolute;
+            border-left: 10px solid var(--error-color);
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            right: -8px;
+            top: 30%;
+            z-index: 9999;
+        }
+
+        .error_arrow_top {
+            position: absolute;
+            border-top: 10px solid var(--error-color);
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            bottom: -8px;
+            z-index: 9999;
+        }
+
+        .error_arrow_bottom {
+            position: absolute;
+            border-bottom: 10px solid var(--error-color);
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            top: -8px;
+            right: 8px;
+            z-index: 9999;
+        }
+    }
+}

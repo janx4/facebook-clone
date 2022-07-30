@@ -1,18 +1,19 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import RegisterMobile from "./components/register/RegisterMobile";
+import Home from "./pages/Home";
 import Login from "./pages/Login";
+import ProtectedRoute from "./routes/ProtectedRoute";
 
 const App: React.FC = () => {
     return (
-        <div className="App">
-            <Router>
-                <Routes>
-                    <Route path="/">
-                        <Route path="login" element={<Login />} />
-                    </Route>
-                </Routes>
-            </Router>
-        </div>
+        <Routes>
+            <Route path="/">
+                <Route index element={<Home />} />
+                <Route path="login" element={<Login />} />
+                <Route path="register" element={<RegisterMobile />} />
+            </Route>
+        </Routes>
     );
 };
 

@@ -1,0 +1,17 @@
+.step4 {
+    .lines {
+        padding: 12px 36px;
+        .line {
+            display: flex;
+            width: 100%;
+            padding: 6px 0;
+            text-align: center;
+
+            label {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+            }
+        }
+    }
+}

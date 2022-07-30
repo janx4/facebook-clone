@@ -7,9 +7,17 @@
 
 // Page styles
 @import "./pages/login";
+@import "./pages/home";
 
-// Component styles
-@import "./components/inputs/login-input";
-@import "./components/inputs/register-input";
-@import "./components/login/login_form";
-@import "./components/login/login-footer";
+/* Component styles */
+
+//inputs
+@import "./components/inputs/index";
+//login
+@import "./components/login/index";
+//register
+@import "./components/register/index";
+//header
+@import "./components/header/index";
+//home
+@import "./components/home/index";

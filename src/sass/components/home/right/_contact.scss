@@ -1,0 +1,22 @@
+.contact {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: var(--color-primary);
+
+    .contact_img img {
+        width: 36px;
+        height: 36px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    span {
+        font-weight: 600;
+        transform: translateY(-5px);
+    }
+}

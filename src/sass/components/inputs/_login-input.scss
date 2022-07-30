@@ -1,32 +1,32 @@
 .loginInput_wrapper {
     position: relative;
-    width: 320px;
+    min-width: 300px;
     flex-direction: column;
     @include flex(flex-start, center);
-    @include mediaMinWidth(850px) {
-        width: 360px;
+    @include mediaMinWidth(768px) {
+        width: 100%;
     }
 
     .input_wrapper {
         width: 100%;
         height: 50px;
-        margin-bottom: 12px;
+        margin-bottom: 8px;
         position: relative;
 
         input {
             outline: none;
-            border: 1px solid $bg-third;
-            background-color: $bg-primary;
+            border: 1px solid #ccd0d5;
+            background-color: var(--bg-primary);
             width: 100%;
             height: 100%;
             font-size: 17px;
             border-radius: 12px;
             padding-left: 12px;
 
-            color: $color-primary;
+            color: var(--color-primary);
 
             &.error {
-                border-color: $error-color;
+                border-color: red;
             }
         }
         & i {
@@ -40,7 +40,7 @@
     & .error_bubble {
         position: relative;
         padding: 14px 8px;
-        background-color: $error-color;
+        background-color: var(--error-color);
         width: 100%;
         color: white;
         font-size: 13px;
@@ -54,7 +54,7 @@
 
         .error_arrow_left {
             position: absolute;
-            border-left: 10px solid $error-color;
+            border-left: 10px solid var(--error-color);
             border-top: 10px solid transparent;
             border-bottom: 10px solid transparent;
             right: -8px;
@@ -64,7 +64,7 @@
 
         .error_arrow_top {
             position: absolute;
-            border-top: 10px solid $error-color;
+            border-top: 10px solid var(--error-color);
             border-left: 10px solid transparent;
             border-right: 10px solid transparent;
             bottom: -8px;
@@ -73,7 +73,7 @@
 
         .error_arrow_bottom {
             position: absolute;
-            border-bottom: 10px solid $error-color;
+            border-bottom: 10px solid var(--error-color);
             border-left: 10px solid transparent;
             border-right: 10px solid transparent;
             top: -8px;

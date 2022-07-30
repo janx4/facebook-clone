@@ -6,9 +6,7 @@
 body {
     font-family: "Segoe UI", Helvetica, Arial, sans-serif;
 }
-html {
-    // overflow-y: scroll;
-}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -18,7 +16,7 @@ a {
 .blue_btn {
     @include borderOutline-none;
     @include flex(center, center);
-    background: $blue-color;
+    background: var(--blue-color);
     padding: 8.5px 12px;
     border-radius: 7px;
     font-family: inherit;
@@ -31,7 +29,7 @@ a {
 .light_blue_btn {
     @include borderOutline-none;
     @include flex(center, center);
-    background: $light-blue-color;
+    background: var(--light-blue-color);
     padding: 8.5px 12px;
     border-radius: 7px;
     font-family: inherit;
@@ -44,19 +42,23 @@ a {
 .gray_btn {
     @include borderOutline-none;
     @include flex(center, center);
-    background: $bg-secondary;
+    background: var(--bg-secondary);
     padding: 8.5px 12px;
     border-radius: 7px;
     font-family: inherit;
     font-weight: 600;
     font-size: 14px;
-    color: $color-primary;
+    color: var(--color-primary);
     gap: 6px;
     cursor: pointer;
 }
 .blue_btn,
 .gray_btn span {
     transform: translateY(-1px);
+}
+
+.relative {
+    position: relative;
 }
 
 /*----Buttons----*/
@@ -73,10 +75,10 @@ a {
 
 /*-----Hovers-----*/
 .hover1:hover {
-    background: $bg-secondary;
+    background: var(--bg-secondary);
 }
 .hover2:hover {
-    background: $bg-third;
+    background: var(--bg-third);
 }
 .hover3:hover {
     background: #d4d6da3a;
@@ -108,7 +110,7 @@ a {
     width: 36px;
     border-radius: 50%;
     margin-right: 11px;
-    background: $bg-third;
+    background: var(--bg-third);
     cursor: pointer;
 }
 /*---Circles------*/

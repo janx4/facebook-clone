@@ -1,0 +1,40 @@
+.step1 {
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+    gap: 12px;
+    width: 100%;
+
+    .fields {
+        display: flex;
+        gap: 8px;
+
+        .field {
+            width: 100%;
+            label {
+                color: #606770;
+                font-size: 13px;
+                line-height: 16px;
+                text-align: left;
+            }
+
+            input {
+                background-color: #fff;
+                border: 1px solid #ccd0d5;
+                box-shadow: none;
+                height: 40px;
+                padding: 4px 8px 5px;
+                width: 100%;
+                font-size: 14px;
+                line-height: 18px;
+                border-radius: 6px;
+
+                &:focus {
+                    border: 2px solid rgba(24, 119, 242, 0.2);
+                    box-shadow: inset 0 0 0 1px #2d88ff;
+                    outline: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+.home__left {
+    position: fixed;
+    padding: 16px 0;
+    min-width: 250px;
+    max-height: calc(100vh - var(--header-height));
+    color: var(--primary-color);
+    user-select: none;
+    overflow-y: auto;
+    width: 20vw;
+    left: 6px;
+
+    @include mediaMaxWidth(1096px) {
+        & {
+            display: none;
+        }
+    }
+
+    .divider {
+        height: 2px;
+        background-color: var(--divider);
+        margin: 12px 6px 0 6px;
+    }
+
+    .small_circle {
+        background: rgb(214, 214, 214);
+    }
+}

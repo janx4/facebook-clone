@@ -1,0 +1,107 @@
+.register-mobile {
+    min-height: 100vh;
+
+    .header {
+        width: 100%;
+        height: 44px;
+        background-color: #3b5998;
+        @include flex(center, center);
+        font-size: 16px;
+        color: white;
+        font-weight: 500;
+    }
+
+    .form {
+        @include flex(center, center);
+        flex-direction: column;
+        gap: 8px;
+
+        padding: 12px 8px 0;
+
+        .question {
+            font-size: 20px;
+            line-height: 24px;
+            font-weight: bold;
+        }
+
+        .hint {
+            color: #1c1e21;
+            font-size: 15px;
+            line-height: 20px;
+        }
+
+        @import "./step-in-mobile/step-1";
+        @import "./step-in-mobile/step-2";
+        @import "./step-in-mobile/step-4";
+
+        .error {
+            width: 100%;
+
+            .wrap {
+                padding: 8px;
+                background: #fa3e3e;
+                color: white;
+            }
+        }
+    }
+    .wrapper {
+        width: 100%;
+        padding: 12px 21% 20px 21%;
+
+        .btn {
+            background-color: #1877f2;
+            color: #fff;
+            -webkit-appearance: none;
+            border: none;
+            border-radius: 6px;
+            box-sizing: border-box;
+            display: block;
+            font-size: 15px;
+            font-weight: bold;
+            line-height: 20px;
+            min-height: 36px;
+            padding: 8px 12px;
+            position: relative;
+            text-align: center;
+            width: 100%;
+            cursor: pointer;
+        }
+    }
+
+    .back {
+        width: max-content;
+        color: #576b95;
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 14px;
+        padding: 0 16px;
+    }
+
+    .langs {
+        display: flex;
+        justify-content: space-around;
+        padding: 6px;
+
+        .col {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            p {
+                color: #576b95;
+                cursor: pointer;
+                text-decoration: none;
+                font-size: 12px;
+                line-height: 16px;
+                text-align: center;
+            }
+        }
+    }
+
+    .copyright {
+        color: gray;
+        text-align: center;
+        margin: 8px 0;
+        font-size: 12px;
+        line-height: 15px;
+    }
+}

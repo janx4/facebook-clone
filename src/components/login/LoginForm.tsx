@@ -1,7 +1,11 @@
 import { Form, Formik } from "formik";
 import React from "react";
-import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { Link, useNavigate } from "react-router-dom";
 import * as Yup from "yup";
+import Cookie from "js-cookie";
+import { setCredentials } from "../../redux/user/user-slice";
+import { useLoginMutation } from "../../services/AuthAPI";
 import LoginInput from "../inputs/LoginInput";
 
 const LoginSchema = Yup.object().shape({
@@ -13,11 +17,18 @@ const LoginSchema = Yup.object().shape({
         .required("Password is required."),
 });
 
-const LoginForm: React.FC = () => {
+interface Props {
+    setIsOpenRegisterForm: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const LoginForm: React.FC<Props> = ({ setIsOpenRegisterForm }) => {
     const initialValues = {
         email: "",
         password: "",
     };
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
+    const [login, { isLoading }] = useLoginMutation();
 
     return (
         <div className="login__wrapper">
@@ -33,8 +44,27 @@ const LoginForm: React.FC = () => {
                     <Formik
                         initialValues={initialValues}
                         validationSchema={LoginSchema}
-                        onSubmit={(values, actions) => {
-                            console.log({ values });
+                        onSubmit={async (values, actions) => {
+                            try {
+                                const result = await login({
+                                    ...values,
+                                });
+
+                                if ("data" in result) {
+                                    Cookie.set(
+                                        "user",
+                                        JSON.stringify(result.data)
+                                    );
+                                    dispatch(
+                                        setCredentials({ ...result.data })
+                                    );
+                                    navigate("/");
+                                }
+
+                                console.log({ values });
+                            } catch (error) {
+                                console.log(error);
+                            }
                         }}
                     >
                         {(formik) => (
@@ -66,7 +96,10 @@ const LoginForm: React.FC = () => {
                         Fogotten password?
                     </Link>
                     <div className="divider"></div>
-                    <button className="blue_btn create_account">
+                    <button
+                        className="blue_btn create_account"
+                        onClick={() => setIsOpenRegisterForm(true)}
+                    >
                         Create Account
                     </button>
                 </div>
